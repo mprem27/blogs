@@ -1,0 +1,97 @@
+
+*{
+ margin: 0;
+ padding: 0;  
+ box-sizing: border-box; 
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    border: 5px solid red;
+}
+
+.blogs{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+}
+.heading{
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+.heading h1{
+    font-size: 40px;
+    color: rgb(45, 227, 45);
+}
+
+.heading h4{
+    color: #777;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 8px;
+}
+.cards .card{
+    height: 400px;
+    width: 300px;
+    margin: 30px 15px;
+    box-shadow: 2px 10px 2px 2px  rgb(143, 168, 143);
+    
+}
+.cards .card img{
+    width: inherit;
+    height: 200px;
+    object-fit: cover;
+    
+}
+.cards .card .tagline{
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+    margin: 5px 10px;
+}
+.cards .card .tagline span{
+    color: #777;
+}
+.cards .card .title{
+    color: blue;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 5px 10px;
+}
+.cards .card .contant{
+    margin: 5px 10px;
+    font-size: 15px;
+    color: black;
+    line-height: 1.4;
+
+}
+.cards .card a{
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 15px 10px;
+    font-size: 18px;
+    background-color: rgb(36, 36, 215);
+    color: white;
+    border-radius: 10px;
+}
+.cards .card a:hover{
+    background-color: rgb(61, 61, 227);
+}
+
+@media screen and (max-width: 1080px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media screen and (max-width: 718px){
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
