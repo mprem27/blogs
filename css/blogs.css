@@ -7,7 +7,6 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    border: 5px solid red;
 }
 
 .blogs{
@@ -93,5 +92,7 @@
 @media screen and (max-width: 718px){
     .cards{
         grid-template-columns: repeat(1,1fr);
+        justify-self: center;
+    text-align: center;
     }
 }
